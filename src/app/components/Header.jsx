@@ -2,8 +2,8 @@
 
 import { useState, useCallback } from "react"
 import Link from "next/link"
-import { Search, ShoppingCart, User, Menu, X } from "lucide-react"
-import { useCart } from "../context/CartContext.jsx"
+import { Search, ShoppingCart, Menu, X } from "lucide-react"
+import { useCart } from "../context/CartContext.js"
 
 export default function Header({ searchQuery, onSearchChange }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
